@@ -268,7 +268,7 @@ def document_generator():
 
 def rag_chat():
     """RAG Chat tab"""
-    st.title("🤖 NeIA - Chat")
+    st.title("Office Co Pilot")
     st.write("Conectado à base de dados")
     
     # Initialize Astra DB client
