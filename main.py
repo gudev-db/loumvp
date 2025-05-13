@@ -67,8 +67,7 @@ def generate_response(query: str, context: str, mental_state: dict = None) -> st
     
     # Base system prompt
     system_prompt = """
-    Você é o co-piloto da agência de marketing Macfor e está aqui para prover informações sobre a empresa Holambra Cooperativa. 
-    Seja atencioso e ajude o usuário a encontrar o que quer.
+    Você é o co-piloto de escritório focado em bem estar das mulheres no ambiente de trabalho. Seja atencioso e ajude o usuário a alcançar seus objetivos.
     """
     
     # Add mental state information if available
@@ -79,7 +78,7 @@ def generate_response(query: str, context: str, mental_state: dict = None) -> st
         - Nível de Estresse: {mental_state['stress']}
         - Nível de Ansiedade: {mental_state['anxiety']}
         
-        Adapte sua comunicação conforme necessário para ser mais empático e compreensivo.
+        Adapte sua comunicação conforme necessário para ser mais empático e compreensivo conforme os níveis acima.
         """
     
     prompt = f"""Responda baseado no contexto abaixo:
